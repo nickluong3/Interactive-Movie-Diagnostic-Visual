@@ -10,8 +10,7 @@ import plotly.express as px
 import pandas as pd
 
 # Load the dataset
-file_path = "/Users/nickluong/Downloads/Cleaned_Movies_Updated.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("Cleaned_Movies_Updated.csv")
 
 # Remove 'Multiple Genres' from the dataset
 df = df[df['Genre'] != 'Multiple Genres']
